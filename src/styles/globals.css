@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  padding: 0 1rem;
   margin: 0;
 }
 
@@ -10,4 +10,16 @@ header {
   color: white;
   gap: 1rem;
   padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
