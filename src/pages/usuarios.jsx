@@ -18,23 +18,25 @@ export default function Usuarios() {
   return (
     <>
       <Header />
-      <h1>Usuários</h1>
-      <table className="table-auto">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {usuarios.map((usuario) => (
+      <main>
+        <h1>Usuários</h1>
+        <table className="table-auto">
+          <thead>
             <tr>
-              <td>{usuario.name}</td>
-              <td>{usuario.email}</td>
+              <th>Nome</th>
+              <th>Email</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {usuarios.map((usuario) => (
+              <tr>
+                <td>{usuario.name}</td>
+                <td>{usuario.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </main>
     </>
   );
 }
