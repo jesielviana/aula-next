@@ -28,8 +28,8 @@ export default function Usuarios() {
             </tr>
           </thead>
           <tbody>
-            {usuarios.map((usuario) => (
-              <tr>
+            {usuarios.map((usuario, index) => (
+              <tr key={index}>
                 <td>{usuario.name}</td>
                 <td>{usuario.email}</td>
               </tr>
